@@ -1,0 +1,34 @@
+body{
+    background-color:white;
+}
+
+.logo{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.titre {
+
+    color: #3faa04;
+    padding: 0 0 5rem 5rem;
+    font-size: 80px;
+    text-align: center;
+}
+
+
+.header{
+    display: flex;
+    align-content: flex-start;
+} 
+
+.navigation{
+    background-color: #3faa01;
+}
+
+ol{
+    list-style-type: none;
+}
+.barre{
+
+}
+
