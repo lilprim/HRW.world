@@ -2,15 +2,29 @@
 
 /* Corps du site */
 body{
-    background-image: url(/HRW.world/Logo\ Human\ Modif\ by\ Kev/fond2.png);
+    background-image: url(Logo/fond2.png);
     margin: none;
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-position:  center;
-    max-width: 100%;
-    max-height: 100%;
     background-size: cover;
-    
+}
+main{
+    max-width: 1600px;
+    margin: 0 auto 0;
+}
+.contenu-main{
+    background-color: white;
+
+}
+header{
+    margin: 50px auto 0;
+    max-width: 1600px;
+
+}
+footer{
+    margin: 0 auto 50px;
+    max-width: 1600px;
 
 }
 
@@ -26,6 +40,8 @@ a {
 .top_header{
     height: 100px;
     text-align: right;
+    background-color:rgba(0, 0, 0, 0.7);
+
 }
 .logo{
     max-width: 10%;
@@ -33,13 +49,8 @@ a {
     position: absolute;
     display: flex;
     
-    
 }
 
-.top_header {
-    background-color: black;
-    
-} 
 
 .navigation{
     padding-top: 50px!important;
@@ -57,7 +68,8 @@ a {
 
 .barre_top{
     background-color: lightgray;
-    height: 3rem;
+    max-height: 3rem;
+
 }
 
 .second-bar{
@@ -71,10 +83,13 @@ a {
     background-color: white;
     
 }
-
-.titre_logo{
+/* Logo typo */
+.titre_image{
     padding: 0rem 3rem;
-
+}
+.titre_logo{
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 100%;
 }
 
 /* Reseaux sociaux */
