@@ -1,6 +1,8 @@
 <?php
+session_start();
 require_once "connect.php";
 $ovh=F_CONNECT::getConnexionOVH();
+    if(isset($kick) && $kick==1 && !isset($_SESSION["user"])) header("location: index.php");
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +31,10 @@ $ovh=F_CONNECT::getConnexionOVH();
                     <a class="bouton" href="qui-sommes-nous.html">Qui sommes nous ?</a>
                     <a class="bouton " href="notre-charte.html">Notre charte</a>
                     <a class="bouton" href="nous-contacter.php">Nous contacter</a>
-                    <a class="bouton" href="login.php">Se connecter</a>
+                    <?php
+                        if(!isset($_SESSION["user"])) echo'<a class="bouton" href="login.php">Se connecter</a>';
+                        else echo'<a class="bouton" href="logout.php">Déconnexion</a>';
+                    ?>
                     </div>
                         </div>
         </div>
